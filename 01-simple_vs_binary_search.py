@@ -1,7 +1,3 @@
-import math
-import random
-
-
 def binary_search(arr, item):
     """
     Only works when we get an ordered list.
@@ -22,6 +18,7 @@ def binary_search(arr, item):
             low = mid + 1
 
     return None
+
 
 def simple_search(arr, item):
     if not list or len(arr) == 0:
