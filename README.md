@@ -7,3 +7,4 @@ Tinkering with the book
 * Chapter 3 - recursion
 * Chapter 4 - quicksort
 * Chapter 5 - hash tables
+* Chapter 6 - breadth-first search
