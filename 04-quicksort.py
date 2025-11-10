@@ -1,15 +1,21 @@
-def my_max(arr, index=0, max_value=0):
-    if index == len(arr):
-        return max_value
+def binary_search(arr, item):
+    return _binary_search_rec(item, arr[0], arr[-1])
 
-    curr = arr[index]
-    if curr > max_value:
-        max_value = curr
 
-    index += 1
-    return my_max(arr, index, max_value)
+def _binary_search_rec(item, low, high):
+    if low > high:
+        return None
+
+    mid = (low + high) // 2
+    if mid == item:
+        return mid
+
+    if item < mid:
+        return _binary_search_rec(item, low, mid - 1)
+    else:
+        return _binary_search_rec(item, mid + 1, high)
 
 
 if __name__ == '__main__':
-    my_list = [20, 33, 2, 56, 12, 1, 0]
-    print(my_max(my_list))
+    my_list = list(range(0, 10, 2))
+    print(binary_search(my_list, 1))
