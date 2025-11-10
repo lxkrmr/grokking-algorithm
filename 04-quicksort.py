@@ -1,21 +1,23 @@
-def binary_search(arr, item):
-    return _binary_search_rec(item, arr[0], arr[-1])
+import random
 
 
-def _binary_search_rec(item, low, high):
-    if low > high:
-        return None
+def quicksort(arr):
+    if len(arr) < 2:
+        return arr
 
-    mid = (low + high) // 2
-    if mid == item:
-        return mid
+    pivot = random.choice(arr)
+    copy = list(arr)
+    copy.remove(pivot)
 
-    if item < mid:
-        return _binary_search_rec(item, low, mid - 1)
-    else:
-        return _binary_search_rec(item, mid + 1, high)
+    less = [x for x in copy if x <= pivot]
+    greater = [x for x in copy if x > pivot]
+
+    return quicksort(less) + [pivot] + quicksort(greater)
 
 
 if __name__ == '__main__':
-    my_list = list(range(0, 10, 2))
-    print(binary_search(my_list, 1))
+    print(quicksort([]))
+    print(quicksort([1]))
+    print(quicksort([2, 1]))
+    print(quicksort([3, 2, 1]))
+    print(quicksort([88, 0, 14, 5, 72, 4, 122, 101345, 45, 78, 99, 1234, 234, 45678, 1]))
