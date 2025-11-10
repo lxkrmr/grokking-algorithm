@@ -6,3 +6,4 @@ Tinkering with the book
 * Chapter 2 - selection sort
 * Chapter 3 - recursion
 * Chapter 4 - quicksort
+* Chapter 5 - hash tables
