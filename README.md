@@ -9,3 +9,4 @@ Tinkering with the book
 * Chapter 5 - hash tables
 * Chapter 6 - breadth-first search
 * Chapter 7 - trees
+* Chapter 8 - balanced trees
