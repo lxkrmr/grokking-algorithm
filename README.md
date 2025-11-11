@@ -13,3 +13,4 @@ Tinkering with the book
 * Chapter 9 - Dijkstra's algorithm
 * Chapter 10 - greedy algorithm
 * Chapter 11 -  dynamic programming
+* Chapter 12 - k-nearest neighbors
