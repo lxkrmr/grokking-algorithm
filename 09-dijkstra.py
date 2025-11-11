@@ -1,7 +1,8 @@
 import math
 
 
-def dijkstra(graph: dict, costs: dict, parents: dict, processed: set):
+def dijkstra(graph: dict, costs: dict, parents: dict):
+    processed = set()
     node = find_lowest_cost_node(costs, processed)
     while node is not None:
         cost = costs[node]
@@ -71,8 +72,7 @@ def main():
         "fin": None,
     }
 
-    processed = set()
-    dijkstra(graph, costs, parents, processed)
+    dijkstra(graph, costs, parents)
     print(extract_path_with_total_costs(parents, costs))
 
 
