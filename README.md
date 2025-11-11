@@ -12,3 +12,4 @@ Tinkering with the book
 * Chapter 8 - balanced trees
 * Chapter 9 - Dijkstra's algorithm
 * Chapter 10 - greedy algorithm
+* Chapter 11 -  dynamic programming
